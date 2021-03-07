@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Weapon : Character {
+class Weapon  {
     
     var name : String
     var damage : Int
@@ -15,6 +15,7 @@ class Weapon : Character {
     init (name : String, damage : Int){
         self.name=name
         self.damage=damage
+        
     }
     
     /* mettre en valeur des armes : leur puissance de preference pour tel type de personnage */
