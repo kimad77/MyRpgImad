@@ -26,8 +26,8 @@ class MainRpg {
     
     init()
     {
-    player1 = Player(name: "Joueur 1")
-    player2 = Player(name: "Joueur 2")
+    player1 = Player(namePlayer: "Joueur 1")
+    player2 = Player(namePlayer: "Joueur 2")
     }
     
     func launchGame() {
@@ -35,7 +35,6 @@ class MainRpg {
         consignes()
         //namePlayer1()
         //namePlayer2()
-        // choiceNamePlayer()
         //noSimilaryNamePlayer()
         //choiceNamePersonnage()
         //noSimilaryNamePersonnage()
@@ -57,6 +56,11 @@ class MainRpg {
               + "\n4. Le Chevalier à une attaque forte (120 att), une défense moyenne (100 DEF) et un hp moyen (100 HP)")
     }
               
+    
+    func game() {
+        
+        
+    }
    
     
     
@@ -66,36 +70,37 @@ class MainRpg {
              print("le nom du joueur 1 est /(player1)")
              return player1
          }
+         else {
+            return ("Merci de saisir un nom à votre équipe")
+            
+         }
         
-        return ""
     }
     
     
-    // l'utilisateur renseigne le nom du joueur 2
-    /*func namePlayer2()  -> String{
+    //l'utilisateur renseigne le nom du joueur 2
+    func namePlayer2()  -> String{
          if let player2 = readLine() {
             print("le nom du joueur 2 est /(player2)")
             return player2
          }
         // a finir cette partie
-        return ""
-    }*/
+        return ("Merci de saisir un nom à votre équipe")
+        
+    }
         
     
-    /*faire attention qu'il y ai aucun personnage qui porte le nom d'un autre personnage : enumerer ou fonction utiliser if et || */
-        
-      
-    // pas de doublon dans le nommage des joueurs, et dans ce cas on relance la fonction création d'équipe,
-    /*func noSimilaryNamePlayer() ->Bool{
+     // pas de doublon dans le nommage des joueurs, et dans ce cas on relance la fonction création d'équipe,
+    func noSimilaryNamePlayer() ->Bool{
           
-        if player1 == player2{
+        if namePlayer1()==namePlayer2(){
              print("Nom des 2 joueurs identique /(joueur2), merci de choisir un autre nom pour le joueur 2")
-             return true
+             return false
        } else{
              print("Nommage est OK")
-             return false
+             return true
         }
-    }*/
+    }
     
     
             

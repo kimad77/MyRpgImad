@@ -9,12 +9,16 @@ import Foundation
 
 class Player {
     
-    var name: String
-    var team: [Character] = []
+    var namePlayer: String
+
+    // FAIRE DICTIONNAIRE ET PAS DE TABLEAU
+    var team1: [Character] = []
+    var team2: [Character] = []
     
-    init(name: String) {
-        self.name = name
+    init(namePlayer: String) {
+        self.namePlayer = namePlayer
     }
+    
     // fonction pour l'équipe
         /*func choiceNameCharacter(){
         
@@ -39,6 +43,7 @@ class Player {
         
         
     }*/
+    
     // fonction pour choisir un personnage puis combattre
         
         
