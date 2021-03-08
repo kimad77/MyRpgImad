@@ -21,7 +21,5 @@ class Knight  : Character {
         weapon = [weaponOfKnight1,weaponOfKnight2,weaponOfKnight3]
     }
     
-    
-      
-    
+
 }

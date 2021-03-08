@@ -25,7 +25,7 @@ class Character  {
         if let alias=readLine() {
         return alias
         }
-        return ""
+        return "Merci de saisir un nom de personnage sans champ vide"
     }
     
     //permet de rajouter des elements au dictionnaire alias
@@ -55,8 +55,7 @@ class Character  {
     }
             
     
-                          
-            
+ 
                 
                     
                     

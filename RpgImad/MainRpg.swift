@@ -33,9 +33,6 @@ class MainRpg {
     func launchGame() {
         /*Appel fonctions pour lancer le jeu dans la class MainRpg*/
         consignes()
-        //namePlayer1()
-        //namePlayer2()
-        //noSimilaryNamePlayer()
         //choiceNamePersonnage()
         //noSimilaryNamePersonnage()
         startBattle()
@@ -46,7 +43,7 @@ class MainRpg {
         
     func consignes() {
         print("Menu du jeu RPG : PROPHECY OF FANTASY MEDIEVAL\n")
-        print("sypnosys : SARGON, Le roi des clans des orcs, épris d'orgueil et de tyrannie, veut gourverner le monde où vit 4 clans/n")
+        print("Sypnosys : SARGON, Le roi des clans des Orcs, épris d'orgueil et de tyrannie, veut gourverner le monde où vit 4 clans/n")
         print("une guilde secrete qui éléve des oprphelins parmis les 4 clans, décide de missionner une équipe de 3 afin d'être la plus discrrete et doivent attaquer le roi SARGON lors d'un voyage de celui ci qui sera accompagné par 3 gardes du corps et dont figurent aussi des ancien esclaves des autres clans/n")
         print(" Ce jeu se présente sous la forme d'un jeu de rôle de deux équipes de 3 personnages.\n")
         print("4 type de personnages sont à votre disposition, voici les choix possible :"
@@ -57,24 +54,24 @@ class MainRpg {
     }
               
     
-    func game() {
-        
-        
-    }
-   
+    
+               
+       
+    
     
     
     // l'utilisateur renseigne le nom du joueur 1
-    func namePlayer1()  -> String{
+         func namePlayer1()  -> String{
+             
          if let player1 = readLine() {
              print("le nom du joueur 1 est /(player1)")
              return player1
          }
          else {
-            return ("Merci de saisir un nom à votre équipe")
+            return ("Merci de saisir un nom à votre équipe, sans champ vide")
             
          }
-        
+     
     }
     
     
@@ -91,14 +88,14 @@ class MainRpg {
         
     
      // pas de doublon dans le nommage des joueurs, et dans ce cas on relance la fonction création d'équipe,
-    func noSimilaryNamePlayer() ->Bool{
+    func SimilaryNamePlayer() ->Bool{
           
         if namePlayer1()==namePlayer2(){
              print("Nom des 2 joueurs identique /(joueur2), merci de choisir un autre nom pour le joueur 2")
-             return false
+             return true
        } else{
              print("Nommage est OK")
-             return true
+             return false
         }
     }
     

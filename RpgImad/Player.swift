@@ -12,20 +12,36 @@ class Player {
     var namePlayer: String
 
     // FAIRE DICTIONNAIRE ET PAS DE TABLEAU
-    var team1: [Character] = []
-    var team2: [Character] = []
+    var teams: [Character] = []
+    let maxteams = Int ()
     
     init(namePlayer: String) {
         self.namePlayer = namePlayer
+        }
+    
+    // fonction pour nommer les personnages des deux équipes
+        func choiceNameCharacter()-> String {
+        for _ in 1...6 {
+            if let teams = readLine() {
+            print("le nom du personnage  est /(teams)")
+            return teams
+            }
+            return ("merci de ne pas saisir de champ vide")
+            //comment faire pour qu on retourne à la saisie du personnage si la valeur est vide
+              
+        }
+        return ("Tous les personnages sont nommée")
     }
     
-    // fonction pour l'équipe
-        /*func choiceNameCharacter(){
-        
+    
+    
+    
             //choisir 3 personnages de son equipe
-        
+            
+            
+            
                     
-            print("Merci de nommer le premier personnage de votre equipe")
+            /*print("Merci de nommer le premier personnage de votre equipe")
             character1 = String(readLine() ?? " " )
             Swift.print("Merci de nommer le deuxième personnage de votre equipe")
             character2 = String(readLine() ?? " " )
@@ -44,16 +60,16 @@ class Player {
         
     }*/
     
+    
     // fonction pour choisir un personnage puis combattre
         
-        
-        
-        
+            
     // fonction pour choisir l'action (attaquer ou soigner un allié par exemple
         
         
         
-    // fonction pour savoir si une équipe à perdu
+    // fonction pour savoir si nom du personnage déja utilisé
+    
        /* func aliasOfPersonnage(){
             // a retravailler car on doit changer que le nom qui est déja saisie en double pas tous
              if character.alias==alias{
@@ -74,6 +90,8 @@ class Player {
         // fonction qui détermine si une équipe à perdu tout ses joueurs ou non
         func displayWinner() {
             
+        }
+            
             // utilise swich
             /* afficher le gagnant des qu'un joueur n'a plus de vie pour tous ses personnages*/
             
@@ -83,7 +101,8 @@ class Player {
             // on peut aussi utiliser while tant que la somme des points de vie d un joueur sont > a 0 alors le jeu continue sinon le jeu d'arretetie
             
             
-            }
+            
         
  
+
 }
