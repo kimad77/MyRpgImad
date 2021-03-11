@@ -13,7 +13,7 @@ class Player {
 
     // FAIRE DICTIONNAIRE ET PAS DE TABLEAU
     var teams: [Character] = []
-    var deathTeams :[character] = []
+    var deathTeams :[Character] = []
     var nameOfCharactersTeam: [String] = []
     var death  = 0
     let maxteams = Int ()
@@ -27,7 +27,7 @@ class Player {
         func choiceCharacter()-> String {
         for _ in 1...6 {
             if let nameOfCharacterPLayer = readLine() {
-                while teams.contains(teamofplayer){
+                while teams.contains(nameOfCharactersTeam){
                     print("merci de saisir un autre nom")
                     choiceNameCharacter()
             } else {
