@@ -13,18 +13,27 @@ class Player {
 
     // FAIRE DICTIONNAIRE ET PAS DE TABLEAU
     var teams: [Character] = []
+    var deathTeams :[character] = []
+    var nameOfCharactersTeam: [String] = []
+    var death  = 0
     let maxteams = Int ()
+    var clans = [Knight(alias: <#String#>),Sorcerer(alias: <#String#>),Orc(alias: <#String#>),Elf(alias: <#String#>)]
     
     init(namePlayer: String) {
         self.namePlayer = namePlayer
         }
     
     // fonction pour nommer les personnages des deux équipes
-        func choiceNameCharacter()-> String {
+        func choiceCharacter()-> String {
         for _ in 1...6 {
-            if let teams = readLine() {
+            if let nameOfCharacterPLayer = readLine() {
+                while teams.contains(teamofplayer){
+                    print("merci de saisir un autre nom")
+                    choiceNameCharacter()
+            } else {
+                    teams.append(Character(alias: <#T##String#>))
+                }
             print("le nom du personnage  est /(teams)")
-            return teams
             }
             return ("merci de ne pas saisir de champ vide")
             //comment faire pour qu on retourne à la saisie du personnage si la valeur est vide

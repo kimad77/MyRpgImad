@@ -11,7 +11,7 @@
 		8A814B9E25E13CBB000CDDCD /* Knight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A814B9D25E13CBB000CDDCD /* Knight.swift */; };
 		8A814BA525E13CFF000CDDCD /* Sorcerer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A814BA425E13CFF000CDDCD /* Sorcerer.swift */; };
 		8A814BA925E13F5F000CDDCD /* Weapon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A814BA825E13F5F000CDDCD /* Weapon.swift */; };
-		8ACE5F2525E560E80099A04F /* MainRpg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ACE5F2425E560E80099A04F /* MainRpg.swift */; };
+		8ACE5F2525E560E80099A04F /* GameRpg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ACE5F2425E560E80099A04F /* GameRpg.swift */; };
 		8ACE5F2825E561120099A04F /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ACE5F2725E561120099A04F /* Player.swift */; };
 		8ACE5F2B25E5616F0099A04F /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ACE5F2A25E5616F0099A04F /* Character.swift */; };
 		8ACE5F2F25E562260099A04F /* Elf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ACE5F2E25E562260099A04F /* Elf.swift */; };
@@ -36,7 +36,7 @@
 		8A814B9D25E13CBB000CDDCD /* Knight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Knight.swift; sourceTree = "<group>"; };
 		8A814BA425E13CFF000CDDCD /* Sorcerer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sorcerer.swift; sourceTree = "<group>"; };
 		8A814BA825E13F5F000CDDCD /* Weapon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weapon.swift; sourceTree = "<group>"; };
-		8ACE5F2425E560E80099A04F /* MainRpg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRpg.swift; sourceTree = "<group>"; };
+		8ACE5F2425E560E80099A04F /* GameRpg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameRpg.swift; sourceTree = "<group>"; };
 		8ACE5F2725E561120099A04F /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		8ACE5F2A25E5616F0099A04F /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		8ACE5F2E25E562260099A04F /* Elf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Elf.swift; sourceTree = "<group>"; };
@@ -74,7 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				8A50115125F4F6E5004F68ED /* main.swift */,
-				8ACE5F2425E560E80099A04F /* MainRpg.swift */,
+				8ACE5F2425E560E80099A04F /* GameRpg.swift */,
 				8ACE5F2725E561120099A04F /* Player.swift */,
 				8ACE5F2A25E5616F0099A04F /* Character.swift */,
 				8A814B9D25E13CBB000CDDCD /* Knight.swift */,
@@ -145,7 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8ACE5F3825E580BF0099A04F /* Orc.swift in Sources */,
-				8ACE5F2525E560E80099A04F /* MainRpg.swift in Sources */,
+				8ACE5F2525E560E80099A04F /* GameRpg.swift in Sources */,
 				8A50115225F4F6E5004F68ED /* main.swift in Sources */,
 				8A814BA925E13F5F000CDDCD /* Weapon.swift in Sources */,
 				8ACE5F2F25E562260099A04F /* Elf.swift in Sources */,

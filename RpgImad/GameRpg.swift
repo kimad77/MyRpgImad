@@ -12,7 +12,7 @@
 
 import Foundation
 
-class MainRpg {
+class GameRpg {
     
     var player1 : Player
     var player2 : Player
@@ -87,7 +87,7 @@ class MainRpg {
     }
         
     
-     // pas de doublon dans le nommage des joueurs, et dans ce cas on relance la fonction création d'équipe,
+     // pas de doublon dans le nommage des joueurs, et dans ce cas on relance la fonction création d'équipe.
     func SimilaryNamePlayer() ->Bool{
           
         if namePlayer1()==namePlayer2(){
