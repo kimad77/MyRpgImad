@@ -17,33 +17,32 @@ class Player {
     var nameOfCharactersTeam: [String] = []
     var death  = 0
     let maxteams = Int ()
-    var clans = [Knight(alias: <#String#>),Sorcerer(alias: <#String#>),Orc(alias: <#String#>),Elf(alias: <#String#>)]
+    var clans = [Knight,Sorcerer,Orc,Elf]
     
     init(namePlayer: String) {
         self.namePlayer = namePlayer
         }
     
     // fonction pour nommer les personnages des deux équipes
-        func choiceCharacter()-> String {
-        for _ in 1...6 {
-            if let nameOfCharacterPLayer = readLine() {
-                while teams.contains(nameOfCharactersTeam){
-                    print("merci de saisir un autre nom")
-                    choiceNameCharacter()
-            } else {
-                    teams.append(Character(alias: <#T##String#>))
-                }
-            print("le nom du personnage  est /(teams)")
+        func choiceCharacter()-> String  {
+            for _ in 1...6 {
+                if let nameOfCharacterPLayer = readLine() {
+                    for team in teams{
+                        if nameOfCharactersTeam == teams.alias {
+                        print("nom de personnage déja saisie, merci de saisir un autre")
+                        
+                      { else }
+                        self.teams.append(team)
+                      }
+            print("le nom du personnage  est /(team)")
             }
-            return ("merci de ne pas saisir de champ vide")
-            //comment faire pour qu on retourne à la saisie du personnage si la valeur est vide
-              
+            print("merci de ne pas saisir de champ vide")
+            
         }
-        return ("Tous les personnages sont nommée")
+            print ("Tous les personnages sont nommées")
     }
-    
-    
-    
+        }
+
     
             //choisir 3 personnages de son equipe
             
