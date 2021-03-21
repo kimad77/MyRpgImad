@@ -14,8 +14,8 @@ import Foundation
 
 class GameRpg {
     
-    var player1 : Player
-    var player2 : Player
+    var player1: Player
+    var player2: Player
     
     /*init (player1 : String, player2 : String) {
     
@@ -110,12 +110,12 @@ class GameRpg {
             
             if let choice = readLine() {
                 switch choice {
-                case "1" : // attaquer un personnage de l'équipe adverse
+                case "1": // attaquer un personnage de l'équipe adverse
                     // faire fonction pour choisir personnage de l'équipe adverse
                     attaque()
-                case "2" : // Mettre son personnage en mode défense
+                case "2": // Mettre son personnage en mode défense
                     defense()
-                case "3" : // utiliser une potion de soin
+                case "3": // utiliser une potion de soin
                     soin()
                 default : // attaquer le personnage se met en defense
                     print("votre personnage se défend")

@@ -10,12 +10,12 @@ class Character  {
     
     /* il faut penser le nom du personnage, aux points de vie et son arme */
     /* choisir 4 types de personnage knight Orc Elf Sorcerer  donc var en tableau*/
-    var alias : String
-    var attack : Int = 0
-    var hp : Int = 0
+    var alias: String
+    var attack: Int = 0
+    var hp: Int = 0
     var weapon = [Weapon]()
             
-    init (alias : String){
+    init (alias: String){
         self.alias=alias
     }
     

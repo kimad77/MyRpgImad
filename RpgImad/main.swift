@@ -7,5 +7,5 @@
 
 import Foundation
 
-let rpg = MainRpg()
+let rpg = GameRpg()
 rpg.launchGame()

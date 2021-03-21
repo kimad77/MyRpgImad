@@ -7,13 +7,13 @@
 
 import Foundation
 
-class Knight  : Character {
+class Knight: Character {
     
-    let weaponOfKnight1 = Weapon (name : "Night Sky Sword", damage : 26)
-    let weaponOfKnight2 = Weapon (name : "Zanpakutō", damage : 31)
-    let weaponOfKnight3 = Weapon (name : "The Celest Sword", damage : 35)
+    let weaponOfKnight1 = Weapon (name: "Night Sky Sword", damage: 26)
+    let weaponOfKnight2 = Weapon (name: "Zanpakutō", damage: 31)
+    let weaponOfKnight3 = Weapon (name: "The Celest Sword", damage: 35)
     
-    override init(alias : String){
+    override init(alias: String){
         super.init(alias: alias)
         
         hp = 100

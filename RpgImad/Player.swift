@@ -13,11 +13,10 @@ class Player {
 
     // FAIRE DICTIONNAIRE ET PAS DE TABLEAU
     var teams: [Character] = []
-    var deathTeams :[Character] = []
+    var deathTeams:[Character] = []
     var nameOfCharactersTeam: [String] = []
-    var death  = 0
-    let maxteams = Int ()
-    var clans = [Knight,Sorcerer,Orc,Elf]
+    let maxteams: Int = 6
+    var forceTeams: Int
     
     init(namePlayer: String) {
         self.namePlayer = namePlayer
@@ -28,7 +27,7 @@ class Player {
             for _ in 1...6 {
                 if let nameOfCharacterPLayer = readLine() {
                     for team in teams{
-                        if nameOfCharactersTeam == teams.alias {
+                        if nameOfCharactersTeam == team.alias {
                         print("nom de personnage déja saisie, merci de saisir un autre")
                         
                       { else }

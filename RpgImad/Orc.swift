@@ -7,13 +7,13 @@
 
 import Foundation
 
-class Orc : Character {
+class Orc: Character {
     
-    let weaponOfOrc1 = Weapon(name : "Uruk Hai", damage : 32)
-    let weaponOfOrc2 = Weapon(name : "Choppa", damage : 29)
-    let weaponOfOrc3 = Weapon(name : "Magma Sword", damage : 35)
+    let weaponOfOrc1 = Weapon(name : "Uruk Hai", damage: 32)
+    let weaponOfOrc2 = Weapon(name : "Choppa", damage: 29)
+    let weaponOfOrc3 = Weapon(name : "Magma Sword", damage: 35)
     
-    override init(alias : String){
+    override init(alias: String){
         super.init(alias: alias)
         
         hp = 90
